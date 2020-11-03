@@ -30,7 +30,7 @@ function showMovies(movies) {
         const { poster_path, title, vote_average, overview } = movie;
 
         movieEl.innerHTML = `
-        <img src="${IMGPATH + poster_path}" alt="${title}">
+        <img src="${getPosterPath(poster_path)}" alt="${title}">
         <div class="movie-info">
             <h3>${title}</h3>
             <span class="${getClassByRate(vote_average)}">${vote_average}</span>
@@ -64,4 +64,12 @@ form.addEventListener('submit', (e) => {
         search.value = "";
     }
 })
+
+function getPosterPath(path) {
+    if (path) {
+        return IMGPATH + path;
+    } else {
+        return "./img/no-cover.png"
+    }
+}
 
