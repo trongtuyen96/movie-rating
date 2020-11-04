@@ -4,18 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Sample</title>
+    <title>Rating Movies</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <form id="form"> 
+        <form id="form">
             <input type="text" id="search" placeholder="Search" class="search">
         </form>
     </header>
-    <main></main>
+    <main>
+    </main>
+
+    <body>
+        <div class="popup-container hidden" id="movie-popup">
+            <div class="popup">
+                <button id="close-popup" class="close-popup">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="movie-detail" id="movie-detail">
+                    <div class="movie-header">
+                        <img src="https://image.tmdb.org/t/p/w200/WCSZzWdtPmdRxH9LUCVi2JPCSJ.jpg" alt="">
+                        <div class="movie-short-detail">
+                            <span>6.3</span>
+                            <h3>Alice Through the Looking Glass</h3>
+                            <h4>1h 55m</h4>
+                            <h4>2020-10-23</h4>
+                            <div class="movie-genre">
+                                <span>Action</span>
+                                <span>Thriller</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to
+                        protect it, and a terrorist group kidnaps his daughter just to get it.</h5>
+                    <span>CAST</span>
+                </div>
+
+                <div class="movie-cast">
+                    <ul class="cast" id="cast">
+                        <li> <img src="https://image.tmdb.org/t/p/w200/WCSZzWdtPmdRxH9LUCVi2JPCSJ.jpg" alt="">
+                            <span>Jhonny Depp</span></li>
+                        <li> <img src="https://image.tmdb.org/t/p/w200/WCSZzWdtPmdRxH9LUCVi2JPCSJ.jpg" alt="">
+                            <span>Jhonny Depp</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
 </body>
 
 </html>

@@ -111,3 +111,138 @@ main {
 .movie:hover .overview {
     transform: translateY(0);
 }
+
+.popup-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.popup-container.hidden {
+    opacity: 0;
+    /* Set up to no click zone for event */
+    pointer-events: none;
+}
+
+.popup {
+    background-color: #FFFFFF;
+    padding: 1rem 0rem 0rem;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    max-height: 100vh;
+    max-width: 600px;
+    width: 100%;
+}
+
+.popup .close-popup {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.movie-detail {
+    padding: 1rem 1rem 0rem;
+}
+
+.movie-detail h5{
+    font-weight: normal;
+    font-size: medium;
+}
+
+.movie-detail span{
+    font-weight: bold;
+    font-size: large;
+    color: #708ED2;
+}
+
+
+.movie-detail .movie-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.movie-detail .movie-header img {
+    max-width: 200px;
+}
+
+.movie-detail .movie-header .movie-short-detail {
+    margin: 0 1rem;
+}
+
+.movie-detail .movie-header .movie-short-detail span {
+    background-color: #708ED2;
+    padding: 0.5rem;
+    font-weight: 500;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.movie-detail .movie-header .movie-short-detail h3 {
+    color: #708ED2;
+    font-weight: 400;
+    font-size: xx-large;
+    font-family: inherit;
+}
+
+.movie-detail .movie-header .movie-short-detail h4 {
+  font-weight: normal;
+}
+
+.movie-detail .movie-header .movie-short-detail .movie-genre span {
+    background-color: #708ED2;
+    padding: 0.25rem;
+    font-weight: normal;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.movie-cast{
+    background-color: #b5c4e7;
+    text-align: center;
+}
+
+.cast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cast li {
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+    width: 75px;
+    padding: 1rem 0rem;
+    margin: 1.5rem;
+}
+
+.cast li img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #3333331A;
+    object-fit: cover;
+    height: 75px;
+    width: 75px;
+}
+
+.cast li span {
+    font-size: 0.8rem;
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 75px;
+}
