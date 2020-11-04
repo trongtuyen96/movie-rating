@@ -8,3 +8,5 @@ To-do:
 - Add button to see review and fetch from /movie/id/reviews
 - Add navigation bar with lastest, now playing, popular, top rated, upcoming movies
 - Add trding tab from trending/{media_type}/{time_window}
+
+https://trongtuyen96.github.io/movie-rating/
