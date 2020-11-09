@@ -305,8 +305,9 @@ main {
 
 .review-info .review-name{
     font-weight: bold;
-    padding-right: 20px;
+    padding-right: 10px;
     font-size: 1rem;
+    min-width: 140px;
 }
 
 .review-info .review-text{
