@@ -80,15 +80,15 @@ main {
 }
 
 .movie-info span.green {
-    color: green;
+    color: #008000;
 }
 
 .movie-info span.orange {
-    color: orange;
+    color: #ffa500;
 }
 
 .movie-info span.red {
-    color: red;
+    color: #ff0000;
 }
 
 .overview {
@@ -175,11 +175,20 @@ main {
 }
 
 .movie-detail .movie-header img {
-    max-width: 200px;
+    width: 40%;
+    object-fit: contain;
 }
 
 .movie-detail .movie-header .movie-short-detail {
     margin: 0 1rem;
+}
+
+.movie-detail .movie-header .movie-short-detail span {
+    background-color: #708ED2;
+    padding: 0.5rem;
+    font-weight: 500;
+    border-radius: 50%;
+    color: #ffffff;
 }
 
 .movie-detail .movie-header .movie-short-detail span {
@@ -195,15 +204,24 @@ main {
     font-weight: 400;
     font-size: xx-large;
     font-family: inherit;
+    margin: 0.5rem 0rem 1.5rem;
 }
 
 .movie-detail .movie-header .movie-short-detail h4 {
   font-weight: normal;
+  margin: 0.5rem;
+}
+
+.movie-detail .movie-header .movie-short-detail .movie-genre {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .movie-detail .movie-header .movie-short-detail .movie-genre span {
     background-color: #708ED2;
-    padding: 0.25rem;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
     font-weight: normal;
     border-radius: 10px;
     color: #ffffff;
@@ -221,6 +239,8 @@ main {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    overflow: auto;
+    /* max-height: 150px; */
 }
 
 .cast li {
@@ -228,7 +248,6 @@ main {
     position: relative;
     margin: 5px;
     width: 75px;
-    padding: 1rem 0rem;
     margin: 1.5rem;
 }
 
@@ -241,8 +260,62 @@ main {
 }
 
 .cast li span {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     display: inline-block;
     text-overflow: ellipsis;
     width: 75px;
+}
+
+.review-section {
+    padding: 1rem 1rem 0rem;
+    margin-bottom: 20px;
+}
+
+.review-section span{
+    font-weight: bold;
+    font-size: large;
+    color: #708ED2;
+}
+
+.review-section .see-review {
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+    padding: 0.8rem 4rem;
+    border-color: transparent;
+    background-color: #708ED2;
+    font-size: large;
+    color: #FFFFFF;
+}
+
+.review-section .hidden {
+    display: none;
+}
+
+.review-list {
+    align-items: center;
+}
+
+.review-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    max-height: 150px;
+}
+
+.review-info .review-name{
+    font-weight: bold;
+    padding-right: 20px;
+    font-size: 1rem;
+}
+
+.review-info .review-text{
+    font-style: italic;
+    font-size: 1rem;
+    max-height: 100;
+    overflow: auto;
+}
+
+.review-info .review-text p {
+    margin: 0;
 }
