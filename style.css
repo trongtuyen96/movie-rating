@@ -19,6 +19,15 @@ header {
     justify-content: flex-end;
 }
 
+.logo {
+    width: 100px;
+    background-color: transparent;
+    object-fit: contain;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
 .menu {
     background-color: transparent;
     border: none;
