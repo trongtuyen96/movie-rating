@@ -35,6 +35,12 @@ header {
     outline-style: none;
 }
 
+.clicked {
+    background-color: #22254b;
+    color: #FFFFFF;
+    outline-style: none;
+}
+
 .search {
     border-radius: 50px;
     background-color: transparent;
@@ -333,7 +339,7 @@ main {
 footer {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 1rem 0rem 2rem;
     font-size: 2rem;
 }
 
@@ -353,4 +359,52 @@ footer {
     color: #ffffff;
     margin-left: 2rem;
     cursor: pointer;
+}
+
+.author {
+    color: #ffffff;
+    text-align: center;
+    background-color: #708ED2;
+    padding: 1rem 0rem 2rem;
+}
+
+.socials {
+    text-align: center;
+}
+
+.sc-btn {
+    display: inline-block;
+    font-weight: 600;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 40px;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.375rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+
+.btn-facebook {
+    color: #ffffff;
+    border-color: #4267B2;
+    background-color: #4267B2;
+}
+
+.btn-linkedin {
+    color: #ffffff;
+    border-color: #0e76a8;
+    background-color: #0e76a8;
+}
+
+.btn-github {
+    color: #ffffff;
+    border-color: #211F1F;
+    background-color: #211F1F;
 }

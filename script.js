@@ -26,11 +26,13 @@ const topRatedMenu = document.querySelector('.top-rated');
 const upcomingMenu = document.querySelector('.upcoming');
 
 // Variable
-const pageNumber = 1
+let pageNumber = 1
+let currAPI = API_NOW_PLAYING_MOVIES;
 
 // Footer
 const prevPageBtn = document.querySelector('.prev-page');
 const nextPageBtn = document.querySelector('.next-page');
+const pageNumberEl = document.querySelector('.page-num');
 
 // initially get movies
 getMovies(API_NOW_PLAYING_MOVIES + pageNumber);
@@ -190,21 +192,75 @@ async function openMovieDetail(movieId) {
 }
 
 nowPlayingMenu.addEventListener('click', () => {
+    pageNumber = 1;
     getMovies(API_NOW_PLAYING_MOVIES + pageNumber);
+    currAPI = API_NOW_PLAYING_MOVIES;
+
+    nowPlayingMenu.classList.add('clicked');
+    popularMenu.classList.remove('clicked');
+    trendingMenu.classList.remove('clicked');
+    topRatedMenu.classList.remove('clicked');
+    upcomingMenu.classList.remove('clicked');
 })
 
 popularMenu.addEventListener('click', () => {
+    pageNumber = 1;
     getMovies(API_POPULAR_MOVIES + pageNumber);
+    currAPI = API_POPULAR_MOVIES;
+
+    nowPlayingMenu.classList.remove('clicked');
+    popularMenu.classList.add('clicked');
+    trendingMenu.classList.remove('clicked');
+    topRatedMenu.classList.remove('clicked');
+    upcomingMenu.classList.remove('clicked');
 })
 
 trendingMenu.addEventListener('click', () => {
+    pageNumber = 1;
     getMovies(API_TRENDING_MOVIES + pageNumber);
+    currAPI = API_TRENDING_MOVIES;
+
+    nowPlayingMenu.classList.remove('clicked');
+    popularMenu.classList.remove('clicked');
+    trendingMenu.classList.add('clicked');
+    topRatedMenu.classList.remove('clicked');
+    upcomingMenu.classList.remove('clicked');
 })
 
 topRatedMenu.addEventListener('click', () => {
+    pageNumber = 1;
     getMovies(API_TOP_RATED_MOVIES + pageNumber);
+    currAPI = API_TOP_RATED_MOVIES;
+
+    nowPlayingMenu.classList.remove('clicked');
+    popularMenu.classList.remove('clicked');
+    trendingMenu.classList.remove('clicked');
+    topRatedMenu.classList.add('clicked');
+    upcomingMenu.classList.remove('clicked');
 })
 
 upcomingMenu.addEventListener('click', () => {
+    pageNumber = 1;
     getMovies(API_UPCOMING_MOVIES + pageNumber);
+    currAPI = API_UPCOMING_MOVIES;
+
+    nowPlayingMenu.classList.remove('clicked');
+    popularMenu.classList.remove('clicked');
+    trendingMenu.classList.remove('clicked');
+    topRatedMenu.classList.remove('clicked');
+    upcomingMenu.classList.add('clicked');
+})
+
+nextPageBtn.addEventListener('click', () => {
+    pageNumber += 1;
+    pageNumberEl.innerHTML = pageNumber;
+    getMovies(currAPI + pageNumber);
+})
+
+prevPageBtn.addEventListener('click', () => {
+    if (pageNumber >= 2) {
+        pageNumber -= 1;
+        pageNumberEl.innerHTML = pageNumber;
+        getMovies(currAPI + pageNumber);
+    }
 })
