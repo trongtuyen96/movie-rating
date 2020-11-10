@@ -13,6 +13,10 @@
 
 <body>
     <header>
+        <button class="menu now-playing" autofocus>Now Playing</button>
+        <button class="menu popular">Popular</button>
+        <button class="menu top-rated">Top Rated</button>
+        <button class="menu upcoming">Upcoming</button>
         <form id="form">
             <input type="text" id="search" placeholder="Search" class="search">
         </form>
@@ -29,8 +33,8 @@
                 <div class="movie-header">
                     <img id="cover" src="" alt="">
                     <div class="movie-short-detail">
-                        <span id="average"></span>
-                        <h3 id="title"></h3>
+                        <span class="average" id="average"></span>
+                        <h3 class="title" id="title"></h3>
                         <h4 id="runtime"></h4>
                         <h4 id="release"></h4>
                         <div class="movie-genre">

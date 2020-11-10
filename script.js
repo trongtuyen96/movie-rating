@@ -1,9 +1,15 @@
 const APIKEY = "04c35731a5ee918f014970082a0088b1";
 const APIKEY_URL = "?api_key=04c35731a5ee918f014970082a0088b1";
 const APIURL = "https://api.themoviedb.org/3/";
-const API_POP_MOVIES = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1"
+
+const API_NOW_PLAYING_MOVIES = "https://api.themoviedb.org/3/movie/now_playing?api_key=" + APIKEY + "&page=1";
+const API_POPULAR_MOVIES = "https://api.themoviedb.org/3/movie/popular?api_key=" + APIKEY + "&page=1"
+const API_TOP_RATED_MOVIES = "https://api.themoviedb.org/3/movie/top_rated?api_key=" + APIKEY + "&page=1";
+const API_UPCOMING_MOVIES = "https://api.themoviedb.org/3/movie/upcoming?api_key=" + APIKEY + "&page=1";
+
+
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
-const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query="
+const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=" + APIKEY + "&query="
 
 const main = document.querySelector('main');
 const form = document.getElementById('form');
@@ -12,17 +18,23 @@ const search = document.querySelector('.search');
 const moviePopup = document.getElementById('movie-popup');
 const closePopupBtn = document.getElementById('close-popup');
 
-// initially get movies
-getMovies(API_POP_MOVIES);
+// Menu
+const nowPlayingMenu = document.querySelector('.now-playing');
+const popularMenu = document.querySelector('.popular');
+const topRatedMenu = document.querySelector('.top-rated');
+const upcomingMenu = document.querySelector('.upcoming');
 
-async function getMovies(url) {
+// initially get movies
+getMovies(API_NOW_PLAYING_MOVIES);
+
+async function getMovies(url, append = false) {
     const res = await fetch(url);
     const resData = await res.json();
 
     showMovies(resData.results);
 }
 
-function showMovies(movies) {
+function showMovies(movies, append = false) {
 
     // clear main
     main.innerHTML = "";
@@ -44,10 +56,7 @@ function showMovies(movies) {
         </div>
         
         `;
-        // <div class="overview">
-        //     <h3>Overview:</h3>
-        //     ${overview}
-        // </div>
+
         main.appendChild(movieEl);
     });
 }
@@ -82,7 +91,7 @@ function getPosterPath(path) {
 
 async function openMovieDetail(movieId) {
 
-    const res = await fetch(APIURL + "movie/" + movieId + APIKEY_URL);
+    const res = await fetch(APIURL + "movie/" + movieId + "APIKEY_URL");
     const resData = await res.json();
 
     console.log(resData)
@@ -166,3 +175,19 @@ async function openMovieDetail(movieId) {
         moviePopup.classList.add('hidden');
     })
 }
+
+nowPlayingMenu.addEventListener('click', () => {
+    getMovies(API_NOW_PLAYING_MOVIES);
+})
+
+popularMenu.addEventListener('click', () => {
+    getMovies(API_POPULAR_MOVIES);
+})
+
+topRatedMenu.addEventListener('click', () => {
+    getMovies(API_TOP_RATED_MOVIES);
+})
+
+upcomingMenu.addEventListener('click', () => {
+    getMovies(API_UPCOMING_MOVIES);
+})

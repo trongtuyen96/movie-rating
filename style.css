@@ -15,13 +15,26 @@ body {
 
 header {
     background-color: #373b69;
-    padding: 1.5rem;
     display: flex;
     justify-content: flex-end;
 }
 
+.menu {
+    background-color: transparent;
+    border: none;
+    color: #7378c5;
+    font-size: medium;
+    min-width: 100px;
+    font-weight: 600;
+}
+
+.menu:focus {
+    background-color: #22254b;
+    color: #FFFFFF;
+    outline-style: none;
+}
+
 .search {
-    padding: 0.5rem;
     border-radius: 50px;
     background-color: transparent;
     font-family: inherit;
@@ -29,6 +42,7 @@ header {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     color: #ffffff;
+    margin: 1.5rem 0.5rem;
 }
 
 .search::placeholder {
@@ -157,17 +171,17 @@ main {
     padding: 1rem 1rem 0rem;
 }
 
-.movie-detail h5{
+.movie-detail h5 {
     font-weight: normal;
     font-size: medium;
+    margin-top: 1rem;
 }
 
-.movie-detail span{
+.movie-detail span {
     font-weight: bold;
     font-size: large;
     color: #708ED2;
 }
-
 
 .movie-detail .movie-header {
     display: flex;
@@ -183,7 +197,7 @@ main {
     margin: 0 1rem;
 }
 
-.movie-detail .movie-header .movie-short-detail span {
+.movie-detail .movie-header .movie-short-detail .average {
     background-color: #708ED2;
     padding: 0.5rem;
     font-weight: 500;
@@ -191,25 +205,17 @@ main {
     color: #ffffff;
 }
 
-.movie-detail .movie-header .movie-short-detail span {
-    background-color: #708ED2;
-    padding: 0.5rem;
-    font-weight: 500;
-    border-radius: 50%;
-    color: #ffffff;
-}
-
-.movie-detail .movie-header .movie-short-detail h3 {
+.movie-detail .movie-header .movie-short-detail .title {
     color: #708ED2;
-    font-weight: 400;
+    font-weight: 500;
     font-size: xx-large;
     font-family: inherit;
-    margin: 0.5rem 0rem 1.5rem;
+    margin: 0.5rem 0rem 1rem;
 }
 
 .movie-detail .movie-header .movie-short-detail h4 {
-  font-weight: normal;
-  margin: 0.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0rem;
 }
 
 .movie-detail .movie-header .movie-short-detail .movie-genre {
@@ -222,13 +228,14 @@ main {
     padding: 0.2rem;
     margin-top: 0.2rem;
     margin-right: 0.2rem;
-    font-weight: normal;
     border-radius: 10px;
+    font-size: 0.9rem;
     color: #ffffff;
+    font-weight: 300;
 }
 
-.movie-cast{
-    background-color: #b5c4e7;
+.movie-cast {
+    background-color: #d9e1f1;
     text-align: center;
 }
 
@@ -271,7 +278,7 @@ main {
     margin-bottom: 20px;
 }
 
-.review-section span{
+.review-section span {
     font-weight: bold;
     font-size: large;
     color: #708ED2;
@@ -303,14 +310,14 @@ main {
     max-height: 150px;
 }
 
-.review-info .review-name{
+.review-info .review-name {
     font-weight: bold;
     padding-right: 10px;
     font-size: 1rem;
     min-width: 140px;
 }
 
-.review-info .review-text{
+.review-info .review-text {
     font-style: italic;
     font-size: 1rem;
     max-height: 100;
