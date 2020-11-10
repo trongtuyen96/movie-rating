@@ -26,6 +26,7 @@ header {
     font-size: medium;
     min-width: 100px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .menu:focus {
@@ -67,6 +68,7 @@ main {
     margin: 1rem;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .movie img {
@@ -326,4 +328,29 @@ main {
 
 .review-info .review-text p {
     margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.prev-page {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.page-num {
+    color: #FFFFFF;
+}
+
+.next-page {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-left: 2rem;
+    cursor: pointer;
 }
