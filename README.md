@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/img/logo-trans.png" alt="logo" width="200px"></a>
+  <a><img src="https://github.com/trongtuyen96/cook-recipe/blob/master/img/logo-trans.png" alt="logo" width="200px"></a>
 <!--   <br>
   Movie Rating
   <br> -->
