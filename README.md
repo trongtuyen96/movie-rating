@@ -1,9 +1,9 @@
 <h1 align="center">
   <br>
   <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/img/logo-trans.png" alt="logo" width="200px"></a>
-<!--   <br>
+  <br>
   Movie Rating
-  <br> -->
+  <br>
 </h1>
 
 <h3 align="center" style="bold">An movie web app for viewing rating and description of movies built on HTML, CSS and Javascript.</h3>
