@@ -122,4 +122,3 @@ To-do:
 - [ ] Add trending tab from trending/{media_type}/{time_window}
 - [x] Add trailer video
 - [ ] Not fixed issue of search result page number
-
