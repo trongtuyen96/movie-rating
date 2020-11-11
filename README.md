@@ -34,7 +34,7 @@
 - [License](#license)
 
 ## Key Features
-- View movies: show a list of movies following Noew Playing, Popular Trending, Top-Rated and Upcoming.
+- View movies: show a list of movies following Now Playing, Popular Trending, Top-Rated and Upcoming.
 - Search movie: find the desired movie by name.
 - Movie detail: see movie vote average, relase date, runtime, descriptions, categories, trailer.
 - List of casts: display list of casts whom the movie credited.
@@ -111,13 +111,3 @@ Copyright 2020 Tuyen Nguyen
    See the License for the specific language governing permissions and
    limitations under the License.
 ~~~~
-
-[x] An view popup to see specific movie follow the design
-[x] Add budget, genre, language, release date, video, vote_average, runtime, revenue in pop-up form movies/id
-[x] Add cast from movie/id/credits
-[x] Add button to see review and fetch from /movie/id/reviews
-[x] Page results navigation
-[x] Add navigation bar with lastest, now playing, popular, top rated, upcoming movies
-[ ] Add trending tab from trending/{media_type}/{time_window}
-[x] Add trailer video
-[ ] Not fixed issue of search result page number
