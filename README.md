@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/images/logo.png" alt="logo" width="200"></a>
+  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/images/logo-trans.png" alt="logo" width="200"></a>
 <!--   <br>
-  MOvie Rating
+  Movie Rating
   <br> -->
 </h1>
 
