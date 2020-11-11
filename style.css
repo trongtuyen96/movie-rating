@@ -16,16 +16,17 @@ body {
 header {
     background-color: #373b69;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .logo {
     width: 100px;
     background-color: transparent;
     object-fit: contain;
-    position: absolute;
-    top: 5px;
-    left: 10px;
+}
+
+.menu-bar {
+    display: flex;
 }
 
 .menu {
@@ -33,9 +34,10 @@ header {
     border: none;
     color: #7378c5;
     font-size: medium;
-    min-width: 100px;
+    min-width: 110px;
     font-weight: 600;
     cursor: pointer;
+    height: 100%;
 }
 
 .menu:focus {
@@ -165,7 +167,7 @@ main {
 .popup {
     background-color: #FFFFFF;
     padding: 1rem 0rem 0rem;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     max-width: 600px;
     width: 100%;
     position: relative;
