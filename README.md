@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/images/logo.png" alt="logo" width="600px"></a>
+  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/images/logo.png" alt="logo" width="200px"></a>
 <!--   <br>
   MOvie Rating
   <br> -->
