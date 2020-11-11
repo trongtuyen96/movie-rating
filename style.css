@@ -17,10 +17,11 @@ header {
     background-color: #373b69;
     display: flex;
     justify-content: space-between;
+    padding: 0rem 1rem;
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
     background-color: transparent;
     object-fit: contain;
 }
