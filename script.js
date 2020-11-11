@@ -114,6 +114,7 @@ async function openMovieDetail(movieId) {
     const releaseEl = document.getElementById('release');
     const genresEl = document.querySelector('.movie-genre');
     const summaryEl = document.getElementById('summary');
+    const videoEl = document.getElementById('video-frame');
     const castEl = document.getElementById('cast');
     const reviewListEl = document.querySelector('.review-list');
 
@@ -146,6 +147,7 @@ async function openMovieDetail(movieId) {
     if (resData.genres) {
         resData.genres.forEach(element => {
             const genreEl = document.createElement('span');
+            genreEl.classList.add('genre');
             genreEl.innerHTML = element.name;
             genresEl.appendChild(genreEl);
         });
@@ -153,6 +155,11 @@ async function openMovieDetail(movieId) {
 
     // Summary
     summaryEl.innerHTML = resData.overview;
+
+    // Video
+    const resVideo = await fetch(APIURL + "movie/" + movieId + "/videos" + APIKEY_URL);
+    const resVideoData = await resVideo.json();
+    videoEl.setAttribute('src', "https://www.youtube.com/embed/" + resVideoData.results[0].key);
 
     // Cast
     const resCredit = await fetch(APIURL + "movie/" + movieId + "/credits" + APIKEY_URL);
@@ -187,6 +194,12 @@ async function openMovieDetail(movieId) {
     }
 
     closePopupBtn.addEventListener('click', () => {
+
+        // Stop the video player
+        if (videoEl) {
+            videoEl.setAttribute('src', "");
+        }
+
         moviePopup.classList.add('hidden');
     })
 }

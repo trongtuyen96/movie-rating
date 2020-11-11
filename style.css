@@ -214,11 +214,11 @@ main {
     object-fit: contain;
 }
 
-.movie-detail .movie-header .movie-short-detail {
+.movie-short-detail {
     margin: 0 1rem;
 }
 
-.movie-detail .movie-header .movie-short-detail .average {
+.movie-short-detail .average {
     background-color: #708ED2;
     padding: 0.5rem;
     font-weight: 500;
@@ -226,26 +226,44 @@ main {
     color: #ffffff;
 }
 
-.movie-detail .movie-header .movie-short-detail .title {
+.movie-short-detail .title {
     color: #708ED2;
-    font-weight: 500;
+    font-weight: 600;
     font-size: xx-large;
     font-family: inherit;
     margin: 0.5rem 0rem 1rem;
 }
 
-.movie-detail .movie-header .movie-short-detail h4 {
+.movie-short-detail h4 {
     font-weight: 600;
     margin: 0.5rem 0rem;
 }
 
-.movie-detail .movie-header .movie-short-detail .movie-genre {
+.videoWrapper {
+    position: relative;
+    padding-bottom: 52%;
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 2rem;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.movie-genre {
     display: flex;
     flex-wrap: wrap;
 }
 
-.movie-detail .movie-header .movie-short-detail .movie-genre span {
-    background-color: #708ED2;
+.movie-genre .genre {
+    background-color: #9dbfff;
     padding: 0.2rem;
     margin-top: 0.2rem;
     margin-right: 0.2rem;
@@ -378,7 +396,7 @@ footer {
 .author {
     color: #ffffff;
     text-align: center;
-    background-color: #708ED2;
+    background-color: #373b69;
     padding: 1rem 0rem 2rem;
 }
 

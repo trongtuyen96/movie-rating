@@ -9,5 +9,6 @@ To-do:
 - [x] Page results navigation
 - [x] Add navigation bar with lastest, now playing, popular, top rated, upcoming movies
 - [ ] Add trending tab from trending/{media_type}/{time_window}
+- [x] Add trailer video
 
 https://trongtuyen96.github.io/movie-rating/
