@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/img/logo-trans.png" alt="logo" width="200px"></a>
+  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/img/logo_trans.png" alt="logo" width="200px"></a>
 <!--   <br>
   Movie Rating
   <br> -->
@@ -71,7 +71,7 @@
   <p><em>Or</em></p>
   <p>Click below to use</p>
   <a alt="Use the app" href="https://trongtuyen96.github.io/movie-rating">
-    <img src="https://github.com/trongtuyen96/movie-rating/blob/master/img/logo-trans.png" alt="logo" width="160">
+    <img src="https://github.com/trongtuyen96/movie-rating/blob/master/img/logo_trans.png" alt="logo" width="160">
   </a>
 </h4>
 
