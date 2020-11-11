@@ -1,9 +1,9 @@
 <h1 align="center">
   <br>
   <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/images/logo-trans.png" alt="logo" width="200px"></a>
-  <br>
-  Movie Rating
-  <br>
+<!--   <br>
+  MOvie Rating
+  <br> -->
 </h1>
 
 <h3 align="center" style="bold">An movie web app for viewing rating and description of movies built on HTML, CSS and Javascript.</h3>
@@ -34,7 +34,7 @@
 - [License](#license)
 
 ## Key Features
-- View movies: show a list of movies following Noew Playing, POpular, Trending, Top-Rated and Upcoming.
+- View movies: show a list of movies following Noew Playing, Popular Trending, Top-Rated and Upcoming.
 - Search movie: find the desired movie by name.
 - Movie detail: see movie vote average, relase date, runtime, descriptions, categories, trailer.
 - List of casts: display list of casts whom the movie credited.
@@ -77,7 +77,7 @@
 
 ## Author
 <h4 align="center">
-	Tuyen Nguyen - QA Automation Engineer
+	Tuyen Nguyen - Senior Automation Test Engineer
 	</h4>
 	<h5 align="center">
 	<a href="trongtuyen96@gmail.com">trongtuyen96@gmail.com</a>
@@ -112,13 +112,12 @@ Copyright 2020 Tuyen Nguyen
    limitations under the License.
 ~~~~
 
-To-do:
-- [x] An view popup to see specific movie follow the design
-- [x] Add budget, genre, language, release date, video, vote_average, runtime, revenue in pop-up form movies/id
-- [x] Add cast from movie/id/credits
-- [x] Add button to see review and fetch from /movie/id/reviews
-- [x] Page results navigation
-- [x] Add navigation bar with lastest, now playing, popular, top rated, upcoming movies
-- [ ] Add trending tab from trending/{media_type}/{time_window}
-- [x] Add trailer video
-- [ ] Not fixed issue of search result page number
+[x] An view popup to see specific movie follow the design
+[x] Add budget, genre, language, release date, video, vote_average, runtime, revenue in pop-up form movies/id
+[x] Add cast from movie/id/credits
+[x] Add button to see review and fetch from /movie/id/reviews
+[x] Page results navigation
+[x] Add navigation bar with lastest, now playing, popular, top rated, upcoming movies
+[ ] Add trending tab from trending/{media_type}/{time_window}
+[x] Add trailer video
+[ ] Not fixed issue of search result page number
