@@ -280,6 +280,7 @@ main {
 }
 
 .cast li img {
+    border: 1px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 0 10px #3333331A;
     object-fit: cover;
