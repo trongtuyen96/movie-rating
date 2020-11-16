@@ -42,27 +42,16 @@
 
 ## Screenshots
 <h3 align="center">
-  <p>Main screen</p>
+  <p>Main screen with movie list</p>
 	
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/covers/Capture-1.PNG" alt="capture-1" width="400"></a>
+  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/main/covers/Capture-1.PNG" alt="capture-1" width="800"></a>
+  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/main/covers/Capture-2.PNG" alt="capture-2" width="800"></a>
 
   <p>-------------------------------------------</p>	
-  <p>Filter popup</p>	
+  <p>Movie detail popup with info, cast, trailer</p>	
   
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/covers/Capture-2.PNG" alt="capture-2" width="400"></a>
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/covers/Capture-3.PNG" alt="capture-3" width="400"></a>
-  
-  <p>-------------------------------------------</p>	
-  <p>Filter results</p>
-  
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/covers/Capture-4.PNG" alt="capture-4" width="400"></a>
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/covers/Capture-5.PNG" alt="capture-5" width="400"></a>
-  
-  <p>-------------------------------------------</p>	
-  <p>Recipe info with YouTube video</p>
-  
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/covers/Capture-6.PNG" alt="capture-6" width="400"></a>
-  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/master/covers/Capture-7.PNG" alt="capture-7" width="400"></a>
+  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/main/covers/Capture-3.PNG" alt="capture-3" width="800"></a>
+  <a><img src="https://github.com/trongtuyen96/movie-rating/blob/main/covers/Capture-4.PNG" alt="capture-4" width="800"></a>
 </h3>
 
 ## Demo
