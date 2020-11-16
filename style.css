@@ -18,6 +18,9 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0rem 1rem;
+
+    /* Scroll menu bar */
+    overflow: auto;
 }
 
 .logo {
