@@ -94,7 +94,7 @@ function getPosterPath(path) {
     if (path) {
         return IMGPATH + path;
     } else {
-        return "./img/no-cover.png"
+        return "./images/no-cover.png"
     }
 }
 
