@@ -23,6 +23,21 @@ header {
     overflow: auto;
 }
 
+header::-webkit-scrollbar {
+    width: 2px;
+    height: 0.7rem;
+}
+
+header::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+header::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.5); 
+}
+
 .logo {
     width: 80px;
     background-color: transparent;
