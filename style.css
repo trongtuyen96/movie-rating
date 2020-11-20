@@ -234,6 +234,10 @@ main {
 
 .movie-short-detail {
     margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
 }
 
 .movie-short-detail .average {
